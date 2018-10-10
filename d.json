@@ -3,12 +3,20 @@
     "type": "skills",
     "content": [
       {
-        "title": "Developer",
-        "desc": "Vue, jQuery, <span class='fs--1'>JS</span>, <span class='fs--1'>HTML</span>, <span class='fs--1'>CSS</span>, Lumen."
+        "title": "Frontend Dev",
+        "desc": "Vue, jQuery, <span class='fs--1'>JS</span>, <span class='fs--1'>HTML</span>, <span class='fs--1'>CSS</span>."
+      },
+      {
+        "title": "Backend",
+        "desc": "Nodejs, Express, API, MySQL, AWS"
       },
       {
         "title": "Product",
         "desc": "Idea, wireframing, <span class='fs--1'>UX</span>, implementation, testing."
+      },
+      {
+        "title": "Management",
+        "desc": "Team building, Agile, sprints, documentation."
       },
       {
         "title": "Content",
