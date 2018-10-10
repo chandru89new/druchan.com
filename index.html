@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Druchan</title>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- scripts -->
+    <script src="js/vue.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div id="app" class="container p-5 p-2-m">
+        <!-- header -->
+        <div class="r txtAln-c" id="header">
+            <div class="c-12">
+                <p>
+                    <img src="img/logo.png" alt="" style="max-width: 100%; height: 64px">
+                </p>
+            </div>
+            <div class="c-12">
+                <p>
+                    Hi. I'm <span class="clr-b">Chandru</span>.
+                </p>
+                <p class="mt--2">
+                    I help startups take their products <br class="dn dib-m">
+                    from point A to point B.
+                </p>
+            </div>
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+        
+        <!-- skills -->
+        <div class="r" id="skills">
+            
+            <div class="c-12 fs--1 clr-l">
+                SKILLS
+            </div>
+            
+            <div class="c-12 pb--2" v-for="skill in skills">
+                <div class="r">
+                    <div class="c-3 c-4-m pb-none clr-h">
+                        <a v-if="skill.href" :href="skill.href" target="_blank">
+                            {{skill.title}}
+                        </a>
+                        <span v-else>
+                            {{skill.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="skill.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+        
+        <!-- projects -->
+        <div class="r" id="projects">
+            
+            <div class="c-12 fs--1 clr-l">
+                (SIDE) PROJECTS
+            </div>
+            
+            <div class="c-12 pb--2" v-for="project in projects">
+                <div class="r">
+                    <div class="c-3 c-4-m clr-b pb-none">
+                        <a v-if="project.link" :href="project.link" target="_blank">
+                            {{project.title}}
+                        </a>
+                        <span v-else>
+                            {{project.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="project.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+        
+        <!-- work -->
+        <div class="r" id="work">
+            
+            <div class="c-12 fs--1 clr-l">
+                WORKED WITH
+            </div>
+            
+            <div class="c-12 pb--2" v-for="job in work">
+                <div class="r">
+                    <div class="c-3 c-4-m pb-none clr-b">
+                        <a v-if="job.link" :href="job.link" target="_blank">
+                            {{job.title}}
+                        </a>
+                        <span v-else>
+                            {{job.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="job.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+        
+        <!-- work -->
+        <div class="r" id="wip">
+            
+            <div class="c-12 fs--1 clr-l">
+                W.I.P
+            </div>
+            
+            <div class="c-12 pb--2" v-for="item in wip">
+                <div class="r">
+                    <div class="c-3 c-4-m pb-none clr-h">
+                        <a v-if="item.link" :href="item.link" target="_blank">
+                            {{item.title}}
+                        </a>
+                        <span v-else>
+                            {{item.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="item.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+        
+        <!-- misc -->
+        <div class="r" id="misc">
+            
+            <div class="c-12 fs--1 clr-l">
+                MISC
+            </div>
+            
+            <div class="c-12 pb--2" v-for="item in misc">
+                <div class="r">
+                    <div class="c-3 c-4-m pb-none clr-b">
+                        <a v-if="item.link" :href="item.link" target="_blank">
+                            {{item.title}}
+                        </a>
+                        <span v-else>
+                            {{item.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="item.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+        
+        <!-- colophon -->
+        <div class="r" id="colophon">
+            
+            <div class="c-12 fs--1 clr-l">
+                COLOPHON
+            </div>
+            
+            <div class="c-12">
+                <p>
+                    Site data from <a href="d.json" target="_blank">this file</a>. Rendered using Vue.
+                </p>
+                <p class="mt--2">
+                    Site hand-crafted on a <a href="css/style.sass" target="_blank">custom <span class="fs--1">CSS</span> framework</a>.
+                </p>
+                <p class="mt--2">
+                    
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    <!-- script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
