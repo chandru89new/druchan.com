@@ -34,13 +34,6 @@ a
     transition: color 0.2s ease-in-out
     &:hover 
         color: var(--colorDark)
-    &[target]:after 
-        +m 
-            display: none 
-        content: '\02197'
-        vertical-align: 3px
-        font-size: 0.75em
-        padding-left: 3px
 
 +l 
     *:root 
@@ -48,3 +41,13 @@ a
 +hd
     *:root 
         --baseSize: 17px
+
+.title
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+    &:hover
+        // overflow: visible
+        white-space: initial
+        + div
+            opacity: 0.5

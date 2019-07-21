@@ -28,6 +28,15 @@
     "type": "work",
     "content": [
       {
+        "title": "Algoshelf",
+        "link": "https://algoshelf.com",
+        "desc": "Frontend developer."
+      },
+      {
+        "title": "Finesse Asia",
+        "desc": "Frontend developer."
+      },
+      {
         "title": "NewsletterSpot",
         "link": "https://newsletterspot.com",
         "desc": "Product lead, and manager."
@@ -100,7 +109,7 @@
       {
         "title": "Speech-to-text",
         "link": "https://github.com/chandru89new/speech_to_text/",
-        "desc": "A nodejs script to transcribe audio to text (via AssemblyAI API)."
+        "desc": "A nodejs script to transcribe audio to text."
       },
       {
         "title": "Drop",
@@ -112,26 +121,47 @@
         "link": "https://github.com/chandru89new/shzip",
         "desc": "Generate zipped download files through a simple API request."
       }
+      
     ]
   },
   {
-    "type": "misc",
+    "type": "writings",
     "content": [
       {
-        "title": "Notes",
-        "link": "http://notes.druchan.com",
-        "desc": "Musings, notes on a bunch of things."
+        "title": "Field Notes on Product Management",
+        "link": "https://docs.google.com/document/d/1C_zYYspxKxwJl9riF_2pfpp3wpDnT-vExfUSHEtGu44/edit?usp=sharing",
+        "desc": "Collated notes as PM in bootstrapped startups."
       },
+      {
+        "title": "VueJS and Parcel",
+        "link": "https://drive.google.com/open?id=1IrxkQg8gi4Xo3vD368OHeOe_xUnMawzb",
+        "desc": "A tiny guide to setting up a Vue app in Parcel."
+      }
+    ]
+  },
+  {
+    "type": "contact",
+    "content": [
       {
         "title": "Email",
         "link": "",
         "desc": "chandru89new [&#97;&#116;] gm&#97;il."
+      },
+      {
+        "title": "Notes",
+        "link": "https://notes.druchan.com",
+        "desc": "Musings, notes on a bunch of things."
       }
     ]
   },
   {
     "type": "wip",
     "content": [
+      {
+        "title": "Jsoner",
+        "link": "https://github.com/chandru89new/jsoner",
+        "desc": "Generate dummy JSON data for your apps from your schema"
+      },
       {
         "title": "Statme",
         "link": "",

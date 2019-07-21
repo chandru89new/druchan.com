@@ -9,7 +9,8 @@ $(document).ready(function(){
                 skills: '',
                 projects: '',
                 misc: '',
-                wip: ''
+                wip: '',
+                writings: ''
             };
         },
         beforeCreate: function(){
@@ -33,6 +34,8 @@ $(document).ready(function(){
                             case 'wip': 
                                 inst.wip = result[i].content;
                                 break;
+                            case 'writings':
+                                inst.writings = result[i].content;
                             default: 
                                 inst.misc = result[i].content;
                                 break;

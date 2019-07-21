@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
     <!-- styles -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <!-- scripts -->
     <script src="js/vue.js"></script>
@@ -30,8 +30,7 @@
                     Hi. I'm <span class="clr-b">Chandru</span>.
                 </p>
                 <p class="mt--2">
-                    I help startups take their products <br class="dn dib-m">
-                    from point A to point B.
+                    I am a frontend developer and a few other things.
                 </p>
             </div>
         </div>
@@ -51,7 +50,7 @@
             
             <div class="c-12 pb--2" v-for="skill in skills">
                 <div class="r">
-                    <div class="c-3 c-4-m pb-none clr-h">
+                    <div class="c-3 c-4-m pb-none clr-h title">
                         <a v-if="skill.href" :href="skill.href" target="_blank">
                             {{skill.title}}
                         </a>
@@ -61,6 +60,68 @@
                     </div>
                     <div class="c-9 c-8-m pb-none">
                         <span v-html="skill.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+
+        <!-- work -->
+        <div class="r" id="work">
+            
+            <div class="c-12 fs--1 clr-l">
+                WORKED WITH
+            </div>
+            
+            <div class="c-12 pb--2" v-for="job in work">
+                <div class="r">
+                    <div class="c-3 c-4-m pb-none clr-b title">
+                        <a v-if="job.link" :href="job.link" target="_blank">
+                            {{job.title}}
+                        </a>
+                        <span v-else>
+                            {{job.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="job.desc"></span>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <div class="r">
+            <div class="c-12">
+                <hr class="brd-none bg-l mt-1 mb-1">
+            </div>
+        </div>
+
+        <!-- writings -->
+        <div class="r" id="writings">
+            
+            <div class="c-12 fs--1 clr-l">
+                BOOKS / GUIDES
+            </div>
+            
+            <div class="c-12 pb--2" v-for="item in writings">
+                <div class="r">
+                    <div class="c-3 c-4-m pb-none clr-b title">
+                        <a v-if="item.link" :href="item.link" target="_blank">
+                            {{item.title}}
+                        </a>
+                        <span v-else>
+                            {{item.title}}
+                        </span>
+                    </div>
+                    <div class="c-9 c-8-m pb-none">
+                        <span v-html="item.desc"></span>
                     </div>
                 </div>
             </div>            
@@ -82,7 +143,7 @@
             
             <div class="c-12 pb--2" v-for="project in projects">
                 <div class="r">
-                    <div class="c-3 c-4-m clr-b pb-none">
+                    <div class="c-3 c-4-m clr-b pb-none title">
                         <a v-if="project.link" :href="project.link" target="_blank">
                             {{project.title}}
                         </a>
@@ -105,37 +166,6 @@
         </div>
         
         <!-- work -->
-        <div class="r" id="work">
-            
-            <div class="c-12 fs--1 clr-l">
-                WORKED WITH
-            </div>
-            
-            <div class="c-12 pb--2" v-for="job in work">
-                <div class="r">
-                    <div class="c-3 c-4-m pb-none clr-b">
-                        <a v-if="job.link" :href="job.link" target="_blank">
-                            {{job.title}}
-                        </a>
-                        <span v-else>
-                            {{job.title}}
-                        </span>
-                    </div>
-                    <div class="c-9 c-8-m pb-none">
-                        <span v-html="job.desc"></span>
-                    </div>
-                </div>
-            </div>            
-            
-        </div>
-        
-        <div class="r">
-            <div class="c-12">
-                <hr class="brd-none bg-l mt-1 mb-1">
-            </div>
-        </div>
-        
-        <!-- work -->
         <div class="r" id="wip">
             
             <div class="c-12 fs--1 clr-l">
@@ -144,7 +174,7 @@
             
             <div class="c-12 pb--2" v-for="item in wip">
                 <div class="r">
-                    <div class="c-3 c-4-m pb-none clr-h">
+                    <div class="c-3 c-4-m pb-none clr-h title">
                         <a v-if="item.link" :href="item.link" target="_blank">
                             {{item.title}}
                         </a>
@@ -170,12 +200,12 @@
         <div class="r" id="misc">
             
             <div class="c-12 fs--1 clr-l">
-                MISC
+                CONTACT
             </div>
             
             <div class="c-12 pb--2" v-for="item in misc">
                 <div class="r">
-                    <div class="c-3 c-4-m pb-none clr-b">
+                    <div class="c-3 c-4-m pb-none clr-b title">
                         <a v-if="item.link" :href="item.link" target="_blank">
                             {{item.title}}
                         </a>
