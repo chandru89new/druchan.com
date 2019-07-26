@@ -143,6 +143,11 @@
     "type": "contact",
     "content": [
       {
+        "title": "Github",
+        "link": "https://github.com/chandru89new/",
+        "desc": "Repos of some of my code"
+      },
+      {
         "title": "Email",
         "link": "",
         "desc": "chandru89new [&#97;&#116;] gm&#97;il."
