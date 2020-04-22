@@ -46,8 +46,9 @@ a
     white-space: nowrap
     text-overflow: ellipsis
     overflow: hidden
+    position: relative
     &:hover
-        // overflow: visible
-        white-space: initial
+        overflow: visible
+        z-index: 1000
         + div
             opacity: 0.5

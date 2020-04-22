@@ -68,12 +68,12 @@
     "content": [
       {
         "title": "Psst",
-        "link": "http://druchan.com/psst",
+        "link": "https://github.com/chandru89new/psst",
         "desc": "Handle paste and drag-drop events."
       },
       {
         "title": "Cards.sass",
-        "link": "http://druchan.com/cards.sass/",
+        "link": "https://github.com/chandru89new/cards.sass",
         "desc": "Configurable card <span cass='fs--1'>UI<span> for your app."
       },
       {
@@ -83,12 +83,12 @@
       },
       {
         "title": "Gen_id",
-        "link": "http://druchan.com/gen_id/",
+        "link": "https://github.com/chandru89new/generateID",
         "desc": "Generate random alpha-numeric-symbol characters."
       },
       {
         "title": "Rndstring",
-        "link": "http://druchan.com/rndstring/",
+        "link": "https://github.com/chandru89new/rndstring",
         "desc": "Generate random but pronounceable strings."
       },
       {
@@ -97,23 +97,13 @@
         "desc": "Hide sticky header &amp; footer on Medium."
       },
       {
-        "title": "PasteUpload",
-        "link": "http://druchan.com/pu/",
-        "desc": "Paste to upload to imgur quickly."
-      },
-      {
-        "title": "Samvatsara",
-        "link": "http://druchan.com/samvatsara",
-        "desc": "A growing list of things to re-read, re-watch or re-learn."
-      },
-      {
         "title": "Speech-to-text",
         "link": "https://github.com/chandru89new/speech_to_text/",
         "desc": "A nodejs script to transcribe audio to text."
       },
       {
         "title": "Drop",
-        "link": "http://druchan.com/dropdown",
+        "link": "https://github.com/chandru89new/drop",
         "desc": "A bloat-free, searchable select dropdown."
       },
       {
@@ -121,7 +111,6 @@
         "link": "https://github.com/chandru89new/shzip",
         "desc": "Generate zipped download files through a simple API request."
       }
-      
     ]
   },
   {
@@ -136,6 +125,11 @@
         "title": "VueJS and Parcel",
         "link": "https://drive.google.com/open?id=1IrxkQg8gi4Xo3vD368OHeOe_xUnMawzb",
         "desc": "A tiny guide to setting up a Vue app in Parcel."
+      },
+      {
+        "title": "Notes",
+        "link": "https://notes.druchan.com",
+        "desc": "Musings, notes on a bunch of things."
       }
     ]
   },
@@ -151,31 +145,6 @@
         "title": "Email",
         "link": "",
         "desc": "chandru89new [&#97;&#116;] gm&#97;il."
-      },
-      {
-        "title": "Notes",
-        "link": "https://notes.druchan.com",
-        "desc": "Musings, notes on a bunch of things."
-      }
-    ]
-  },
-  {
-    "type": "wip",
-    "content": [
-      {
-        "title": "Jsoner",
-        "link": "https://github.com/chandru89new/jsoner",
-        "desc": "Generate dummy JSON data for your apps from your schema"
-      },
-      {
-        "title": "Statme",
-        "link": "",
-        "desc": "Track daily analytics for your bootstrapped startup."
-      },
-      {
-        "title": "Untitled I",
-        "link": "https://github.com/chandru89new/c",
-        "desc": "CSS utility framework, emphasis on brevity."
       }
     ]
   }
