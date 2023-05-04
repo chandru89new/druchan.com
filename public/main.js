@@ -5569,7 +5569,7 @@ var $author$project$Main$GetYamlData = {$: 'GetYamlData'};
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
 var $author$project$Main$init = function (_v0) {
 	return _Utils_Tuple2(
-		{appDataLoading: true, profileData: _List_Nil, rawYamlString: '', yamlParserError: $elm$core$Maybe$Nothing},
+		{profileData: $elm$core$Maybe$Nothing, rawYamlString: ''},
 		$elm$core$Platform$Cmd$batch(
 			_List_fromArray(
 				[
@@ -8652,40 +8652,262 @@ var $author$project$Main$update = F2(
 			default:
 				var yamlString = msg.a;
 				var yamlResult = A2($MaybeJustJames$yaml$Yaml$Decode$fromString, $author$project$Main$decodeYaml, yamlString);
-				if (yamlResult.$ === 'Ok') {
-					var data = yamlResult.a;
-					return _Utils_Tuple2(
-						_Utils_update(
-							appState,
-							{appDataLoading: false, profileData: data, yamlParserError: $elm$core$Maybe$Nothing}),
-						$elm$core$Platform$Cmd$none);
-				} else {
-					var e = yamlResult.a;
-					return _Utils_Tuple2(
-						_Utils_update(
-							appState,
-							{
-								appDataLoading: false,
-								yamlParserError: $elm$core$Maybe$Just(
-									$MaybeJustJames$yaml$Yaml$Decode$errorToString(e))
-							}),
-						$elm$core$Platform$Cmd$none);
-				}
+				return _Utils_Tuple2(
+					_Utils_update(
+						appState,
+						{
+							profileData: $elm$core$Maybe$Just(
+								A2($elm$core$Result$mapError, $MaybeJustJames$yaml$Yaml$Decode$errorToString, yamlResult))
+						}),
+					$elm$core$Platform$Cmd$none);
 		}
 	});
+var $elm$json$Json$Encode$string = _Json_wrap;
+var $elm$html$Html$Attributes$stringProperty = F2(
+	function (key, string) {
+		return A2(
+			_VirtualDom_property,
+			key,
+			$elm$json$Json$Encode$string(string));
+	});
+var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $elm$html$Html$div = _VirtualDom_node('div');
+var $elm$html$Html$h1 = _VirtualDom_node('h1');
+var $elm$html$Html$hr = _VirtualDom_node('hr');
+var $elm$html$Html$img = _VirtualDom_node('img');
+var $elm$html$Html$p = _VirtualDom_node('p');
+var $elm$html$Html$Attributes$src = function (url) {
+	return A2(
+		$elm$html$Html$Attributes$stringProperty,
+		'src',
+		_VirtualDom_noJavaScriptOrHtmlUri(url));
+};
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
-var $elm$core$Debug$toString = _Debug_toString;
-var $author$project$Main$view = function (appState) {
+var $author$project$Main$viewHeader = A2(
+	$elm$html$Html$div,
+	_List_Nil,
+	_List_fromArray(
+		[
+			A2(
+			$elm$html$Html$div,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('')
+				]),
+			_List_fromArray(
+				[
+					A2(
+					$elm$html$Html$img,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$src('/logo.png'),
+							$elm$html$Html$Attributes$class('text-center w-16 dark:invert')
+						]),
+					_List_Nil)
+				])),
+			A2(
+			$elm$html$Html$h1,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('mt-6')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('Hi, I\'m Chandru.')
+				])),
+			A2(
+			$elm$html$Html$p,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('mt-2')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('I am a frontend dev and a few other things.')
+				])),
+			A2(
+			$elm$html$Html$hr,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('mt-6')
+				]),
+			_List_Nil)
+		]));
+var $author$project$Main$pageWrapper = function (contents) {
+	return A2(
+		$elm$html$Html$div,
+		_List_Nil,
+		_List_fromArray(
+			[$author$project$Main$viewHeader, contents]));
+};
+var $elm$html$Html$span = _VirtualDom_node('span');
+var $elm$html$Html$h2 = _VirtualDom_node('h2');
+var $elm$html$Html$a = _VirtualDom_node('a');
+var $elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		$elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
+var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
+var $author$project$Main$viewItem = function (item) {
+	var renderItemName = function (item_) {
+		var _v0 = item_.link;
+		if (_v0.$ === 'Nothing') {
+			return _List_fromArray(
+				[
+					$elm$html$Html$text(item_.name)
+				]);
+		} else {
+			var l = _v0.a;
+			return _List_fromArray(
+				[
+					A2(
+					$elm$html$Html$a,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$href(l),
+							$elm$html$Html$Attributes$target('blank')
+						]),
+					_List_fromArray(
+						[
+							$elm$html$Html$text(item_.name)
+						]))
+				]);
+		}
+	};
+	return A2(
+		$elm$html$Html$div,
+		_List_fromArray(
+			[
+				$elm$html$Html$Attributes$class('flex flex-col md:grid md:grid-cols-12')
+			]),
+		_List_fromArray(
+			[
+				A2(
+				$elm$html$Html$span,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class('font-semibold text-stone-500 md:col-span-5 lg:col-span-4')
+					]),
+				renderItemName(item)),
+				A2(
+				$elm$html$Html$span,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class('md:col-span-7 lg:col-span-8')
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text(item.description)
+					]))
+			]));
+};
+var $author$project$Main$viewItems = $elm$core$List$map($author$project$Main$viewItem);
+var $author$project$Main$viewSection = function (section) {
 	return A2(
 		$elm$html$Html$div,
 		_List_Nil,
 		_List_fromArray(
 			[
-				$elm$html$Html$text(
-				$elm$core$Debug$toString(appState.profileData))
+				A2(
+				$elm$html$Html$h2,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class('uppercase text-xs text-zinc-400')
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text(section.name)
+					])),
+				A2(
+				$elm$html$Html$div,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class('mt-3 lg:mt-2 space-y-2')
+					]),
+				$author$project$Main$viewItems(section.items))
 			]));
+};
+var $author$project$Main$viewSections = function (data) {
+	return ($elm$core$List$length(data) > 0) ? A2($elm$core$List$map, $author$project$Main$viewSection, data) : _List_fromArray(
+		[
+			A2(
+			$elm$html$Html$span,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('text-red-400')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('Data drives the world. And this site. But something\'s wrong and there\'s no data to load. :(')
+				]))
+		]);
+};
+var $author$project$Main$viewSectionsOrError = function (profileData) {
+	if (profileData.$ === 'Err') {
+		var e = profileData.a;
+		return A2(
+			$elm$html$Html$div,
+			_List_Nil,
+			_List_fromArray(
+				[
+					A2(
+					$elm$html$Html$div,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$class('text-red-400')
+						]),
+					_List_fromArray(
+						[
+							$elm$html$Html$text('Metamorphosis of a chrysalis went horribly wrong:')
+						])),
+					A2(
+					$elm$html$Html$div,
+					_List_Nil,
+					_List_fromArray(
+						[
+							$elm$html$Html$text(e)
+						]))
+				]));
+	} else {
+		var data = profileData.a;
+		return A2(
+			$elm$html$Html$div,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('space-y-8')
+				]),
+			$author$project$Main$viewSections(data));
+	}
+};
+var $author$project$Main$view = function (appState) {
+	return _Utils_eq(appState.profileData, $elm$core$Maybe$Nothing) ? $author$project$Main$pageWrapper(
+		A2(
+			$elm$html$Html$div,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('mt-6')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('Hold on a moment...')
+				]))) : $author$project$Main$pageWrapper(
+		A2(
+			$elm$html$Html$div,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('mt-6')
+				]),
+			_List_fromArray(
+				[
+					$author$project$Main$viewSectionsOrError(
+					A2(
+						$elm$core$Maybe$withDefault,
+						$elm$core$Result$Ok(_List_Nil),
+						appState.profileData))
+				])));
 };
 var $author$project$Main$main = $elm$browser$Browser$element(
 	{

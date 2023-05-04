@@ -29,6 +29,8 @@ sections:
         description: (Defunct) Frontend developer.
       - name: Around.io
         description: Frontend dev, content marketer, product manager.
+      - name: iGeeksBlog
+        description: Tech researcher/writer.
   - name: Other projects
     items:
       - name: NewsletterSpot
@@ -37,13 +39,11 @@ sections:
         description: UX prototyper.
       - name: Bootstrappist
         description: Bootstrapped startups newsletter researcher/writer.
-      - name: iGeeksBlog
-        description: Tech researcher/writer.
   - name: Hobbyist Projects
     items:
       - name: CLI Options Parser
-        link: https://github.com/chandru89new/elm-simple-cli-options-parser
-        description: Simple CLI options parser in Elm.
+        link: https://package.elm-lang.org/packages/chandru89new/elm-simple-cli-options-parser/latest/
+        description: Simple CLI options parser package in Elm.
       - name: Long-weekend finder
         link: https://github.com/chandru89new/lwc
         description: Find long-weekend possibilities.
@@ -75,7 +75,7 @@ sections:
         link: https://github.com/chandru89new/xpns
         description:
           Personal expense tracking Android app, uses GSheets as backend.
-  - name: Writings
+  - name: Writing
     items:
       - name: JS Cookbook
         description: Simple recipes to make JS dev easier/safer.

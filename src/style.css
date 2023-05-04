@@ -1,9 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Buenard&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Buenard&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --slate-800: #1e293b;
+  --stone-800: #292524;
+  --zinc-400: #a1a1aa;
+  --stone-500: #78716c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --slate-800: #f1f5f9;
+    --stone-800: #f1f5f9;
+    --zinc-400: #71717a;
+    --stone-500: #d6d3d1;
+  }
+  body {
+    @apply bg-zinc-800 text-zinc-400;
+  }
+  hr {
+    @apply text-zinc-400;
+  }
+}
+
 body {
-  font-family: 'Buenard', serif;
+  @apply leading-relaxed text-slate-800 transition-colors duration-300 ease-in-out;
+  font-family: "Buenard", serif;
+}
+
+a {
+  @apply hover:text-stone-800 transition-colors duration-200 ease-in-out;
 }

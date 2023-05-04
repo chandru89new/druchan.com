@@ -1,8 +1,25 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
-  content: ["./src/**/*.elm", "./build/index.html"],
+  content: ["./src/**/*.elm", "./public/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        zinc: {
+          ...colors.zinc,
+          400: "var(--zinc-400)",
+        },
+        slate: {
+          ...colors.slate,
+          800: "var(--slate-800)",
+        },
+        stone: {
+          ...colors.stone,
+          500: "var(--stone-500)",
+          800: "var(--stone-800)",
+        },
+      },
+    },
   },
   plugins: [],
 };
