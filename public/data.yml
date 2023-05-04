@@ -1,0 +1,98 @@
+sections:
+  - name: skills
+    items:
+      - name: Frontend Dev
+        description: React, Elm, Vue, JS, HTML, CSS.
+      - name: Backend
+        description: Node/Express, API design, ORM.
+      - name: Product
+        description: Idea, wireframing, UI/UX, testing.
+      - name: Management
+        description: Team building, sprints, mentorship, documentation.
+      - name: Content
+        description: Research, outreach.
+  - name: Worked with
+    items:
+      - name: TurbotHQ
+        description: (Current) Senior frontend dev.
+        link: https://turbot.com
+      - name: Obvious
+        description: Product engineer, helped build Pause.
+        link: https://obvious.in
+      - name: ThoughtFocus/NexiiLabs
+        link: https://thoughtfocus.com
+        description: Senior frontend engineer.
+      - name: Algoshelf
+        link: https://github.com/rorodata
+        description: Frontend engineer.
+      - name: Finesse Asia
+        description: (Defunct) Frontend developer.
+      - name: Around.io
+        description: Frontend dev, content marketer, product manager.
+  - name: Other projects
+    items:
+      - name: NewsletterSpot
+        description: Product lead, manager, UX prototyper.
+      - name: URLShortener
+        description: UX prototyper.
+      - name: Bootstrappist
+        description: Bootstrapped startups newsletter researcher/writer.
+      - name: iGeeksBlog
+        description: Tech researcher/writer.
+  - name: Hobbyist Projects
+    items:
+      - name: CLI Options Parser
+        link: https://github.com/chandru89new/elm-simple-cli-options-parser
+        description: Simple CLI options parser in Elm.
+      - name: Long-weekend finder
+        link: https://github.com/chandru89new/lwc
+        description: Find long-weekend possibilities.
+      - name: CGOL
+        link: http://elm-conway.vercel.app/
+        description: Implementing Conway's Game of Life in Elm.
+      - name: ES6 Imports Sorter
+        description: Auto-sort import order in ES6 files.
+        link: https://github.com/chandru89new/es-imports-parser
+      - name: Harbor
+        description: Starter pack for (mostly) type-safe Elm ports.
+        link: https://github.com/chandru89new/harbor
+      - name: Psst
+        link: https://github.com/chandru89new/psst
+        description: Dead-simple vanilla JS lib to handle drag-drop events.
+      - name: Advanced Switch Case
+        link: https://github.com/chandru89new/switch-case
+        description: Pattern-matching-like functionality in JS.
+      - name: Covid19
+        link: https://covid19-90ee0.firebaseapp.com/
+        description: Exploring Covid-era numbers country-wise.
+      - name: Shzip
+        link: https://github.com/chandru89new/shzip
+        description: Simple way to generate dyanmic zip deliverables.
+      - name: Rndstring
+        link: https://github.com/chandru89new/rndstring
+        description: Generate pronouncable random strings.
+      - name: Xpns
+        link: https://github.com/chandru89new/xpns
+        description:
+          Personal expense tracking Android app, uses GSheets as backend.
+  - name: Writings
+    items:
+      - name: JS Cookbook
+        description: Simple recipes to make JS dev easier/safer.
+        link: https://github.com/chandru89new/js-cookbook
+      - name: Field Notes
+        description: Collated notes as PM in bootstrapped startups.
+        link: https://github.com/chandru89new/Field-Notes-on-Product-Management
+  - name: Interwebs
+    items:
+      - name: Journal
+        description: Personal blog.
+        link: https://notes.druchan.com
+      - name: Email
+        description: chandru89new on gmail.
+      - name: Github
+        description: Most of my projects/code.
+        link: https://github.com/chandru89new
+      - name: Photography
+        link: https://pics.druchan.com
+        description: Occasional shutter-bugism.

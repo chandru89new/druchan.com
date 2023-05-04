@@ -1,0 +1,16 @@
+{
+  "name": "druchan.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chandru89new/druchan.com.git",
+  "author": "Chandru <chandru89new@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "build-css": "yarn tailwindcss -i src/style.css -o public/styles.css",
+    "build-elm": "elm make src/Main.elm --output=public/main.js",
+    "build": "yarn build-css && yarn build-elm"
+  }
+}
