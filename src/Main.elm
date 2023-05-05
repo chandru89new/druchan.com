@@ -166,7 +166,7 @@ viewItem item =
                     [ H.text item_.name ]
 
                 Just l ->
-                    [ H.a [ Attr.href l, Attr.target "blank" ] [ H.text item_.name ] ]
+                    [ H.a [ Attr.href l, Attr.target "_blank" ] [ H.text item_.name ] ]
     in
     H.div [ Attr.class "flex flex-col md:grid md:grid-cols-12" ]
         [ H.span [ Attr.class "font-semibold text-stone-500 md:col-span-5 lg:col-span-4" ] (renderItemName item)

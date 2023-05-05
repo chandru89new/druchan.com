@@ -635,9 +635,23 @@ body{
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Buenard", serif;
+  position: relative;
 }
 
+/* body::after {
+  content: ' ';
+  @apply block fixed top-0 left-0 -bottom-10 -right-10 opacity-5 overflow-hidden;
+  background: url(./logo.png) no-repeat;
+  background-position: 125% 200%;
+  background-attachment: fixed;
+  background-size: 500px;
+} */
+
 a{
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -645,6 +659,14 @@ a{
 
 a:hover{
   color: var(--stone-800);
+}
+
+a::after{
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 400;
+  content: '\27A4';
+  transform: rotate(-45deg);
 }
 
 @media (prefers-color-scheme: dark){

@@ -8768,7 +8768,7 @@ var $author$project$Main$viewItem = function (item) {
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$href(l),
-							$elm$html$Html$Attributes$target('blank')
+							$elm$html$Html$Attributes$target('_blank')
 						]),
 					_List_fromArray(
 						[

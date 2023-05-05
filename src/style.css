@@ -29,8 +29,24 @@
 body {
   @apply leading-relaxed text-slate-800 transition-colors duration-300 ease-in-out;
   font-family: "Buenard", serif;
+  @apply relative;
 }
 
+/* body::after {
+  content: ' ';
+  @apply block fixed top-0 left-0 -bottom-10 -right-10 opacity-5 overflow-hidden;
+  background: url(./logo.png) no-repeat;
+  background-position: 125% 200%;
+  background-attachment: fixed;
+  background-size: 500px;
+} */
+
 a {
-  @apply hover:text-stone-800 transition-colors duration-200 ease-in-out;
+  @apply hover:text-stone-800 transition-colors duration-200 ease-in-out inline-flex items-center gap-x-1;
+}
+
+a::after{
+  @apply inline-block text-[9px] font-normal;
+  content: '\27A4';
+  transform: rotate(-45deg);
 }
