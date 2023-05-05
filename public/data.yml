@@ -31,7 +31,7 @@ sections:
         description: Frontend dev, content marketer, product manager.
       - name: iGeeksBlog
         description: Tech researcher/writer.
-  - name: Other projects
+  - name: Freelance
     items:
       - name: NewsletterSpot
         description: Product lead, manager, UX prototyper.
@@ -39,17 +39,11 @@ sections:
         description: UX prototyper.
       - name: Bootstrappist
         description: Bootstrapped startups newsletter researcher/writer.
-  - name: Hobbyist Projects
+  - name: Open source libs
     items:
       - name: CLI Options Parser
         link: https://package.elm-lang.org/packages/chandru89new/elm-simple-cli-options-parser/latest/
         description: Simple CLI options parser package in Elm.
-      - name: Long-weekend finder
-        link: https://github.com/chandru89new/lwc
-        description: Find long-weekend possibilities.
-      - name: CGOL
-        link: http://elm-conway.vercel.app/
-        description: Implementing Conway's Game of Life in Elm.
       - name: ES6 Imports Sorter
         description: Auto-sort import order in ES6 files.
         link: https://github.com/chandru89new/es-imports-parser
@@ -62,15 +56,23 @@ sections:
       - name: Advanced Switch Case
         link: https://github.com/chandru89new/switch-case
         description: Pattern-matching-like functionality in JS.
-      - name: Covid19
-        link: https://covid19-90ee0.firebaseapp.com/
-        description: Exploring Covid-era numbers country-wise.
       - name: Shzip
         link: https://github.com/chandru89new/shzip
         description: Simple way to generate dyanmic zip deliverables.
       - name: Rndstring
         link: https://github.com/chandru89new/rndstring
         description: Generate pronouncable random strings.
+  - name: Hobbyist
+    items:
+      - name: Long-weekend finder
+        link: https://lwc-druchan.vercel.app/
+        description: Find long-weekend possibilities.
+      - name: CGOL
+        link: http://elm-conway.vercel.app/
+        description: Implementing Conway's Game of Life in Elm.
+      - name: Covid19
+        link: https://covid19-90ee0.firebaseapp.com/
+        description: Exploring Covid-era numbers country-wise.
       - name: Xpns
         link: https://github.com/chandru89new/xpns
         description:
