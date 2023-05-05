@@ -11,10 +11,13 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "build-css": "yarn tailwindcss -i src/style.css -o public/styles.css",
-    "build-elm": "elm make src/Main.elm --output=public/main.js",
+    "setup": "yarn install",
+    "build-css": "yarn tailwindcss -i src/style.css -o public/styles.css --minify",
+    "build-elm": "elm make src/Main.elm --output=public/main.js --optimize",
     "build": "yarn build-css && yarn build-elm",
+    "build-elm-dev": "elm make src/Main.elm --output=public/main.js",
+    "build-dev": "yarn build-css && yarn build-elm-dev",
     "serve": "http-server public",
-    "watch": "nodemon -w src -w public/index.html -w public/ -e 'elm html css' -x 'yarn build'"
+    "watch": "nodemon -w src -w public/index.html -e 'elm html css' -x 'yarn build-dev'"
   }
 }
