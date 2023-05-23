@@ -4,7 +4,7 @@ sections:
       - name: Frontend Dev
         description: React, Elm, Vue, vanilla JS.
       - name: Backend
-        description: Node, Express, API design, GraphQL, RDMBS.
+        description: Node, Express, API design, GraphQL, RDBMS.
       - name: Product
         description: Idea, wireframing, UI/UX, testing.
       - name: Management
@@ -17,7 +17,7 @@ sections:
         description: (Current) Senior frontend dev.
         link: https://turbot.com
       - name: Obvious
-        description: Product engineer, helped build Pause.
+        description: "Product engineer, helped build Pause."
         link: https://obvious.in
       - name: ThoughtFocus/NexiiLabs
         link: https://thoughtfocus.com
