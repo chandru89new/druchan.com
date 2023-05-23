@@ -2,7 +2,7 @@ sections:
   - name: skills
     items:
       - name: Frontend Dev
-        description: React, Elm, Vue, vanilla JS.
+        description: React, Elm, Vue, TS, vanilla JS.
       - name: Backend
         description: Node, Express, API design, GraphQL, RDBMS.
       - name: Product
