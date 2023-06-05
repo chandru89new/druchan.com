@@ -90,6 +90,9 @@ sections:
       - name: Journal
         description: Personal blog.
         link: https://notes.druchan.com
+      - name: Code
+        description: Programming blog.
+        link: https://code.druchan.com
       - name: Email
         description: chandru89new on gmail.
       - name: Github
