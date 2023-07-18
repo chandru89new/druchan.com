@@ -82,17 +82,17 @@ sections:
       - name: JS Cookbook
         description: Simple recipes to make JS dev easier/safer.
         link: https://github.com/chandru89new/js-cookbook
+      - name: Dev notes
+        description: Dev notes on dev.to
+        link: https://dev.to/druchan
       - name: Field Notes
         description: Collated notes as PM in bootstrapped startups.
         link: https://github.com/chandru89new/Field-Notes-on-Product-Management
-  - name: Interwebs
-    items:
       - name: Journal
         description: Personal blog.
         link: https://notes.druchan.com
-      - name: Code
-        description: Programming blog.
-        link: https://code.druchan.com
+  - name: Interwebs
+    items:
       - name: Email
         description: chandru89new on gmail.
       - name: Github
