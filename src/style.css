@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Buenard&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -28,7 +28,8 @@
 
 body {
   @apply leading-relaxed text-slate-800 transition-colors duration-300 ease-in-out;
-  font-family: "Buenard", serif;
+  font-family: "Fraunces", serif;
+  font-weight: 300;
   @apply relative;
 }
 
@@ -45,8 +46,8 @@ a {
   @apply hover:text-stone-800 transition-colors duration-200 ease-in-out inline-flex items-center gap-x-1;
 }
 
-a::after{
+a::after {
   @apply inline-block text-[9px] font-normal;
-  content: '\27A4';
+  content: "\27A4";
   transform: rotate(-45deg);
 }

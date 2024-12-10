@@ -14,7 +14,7 @@ sections:
   - name: Worked with
     items:
       - name: TurbotHQ
-        description: (Current) Senior frontend dev.
+        description: (Current) Software architect.
         link: https://turbot.com
       - name: Obvious
         description: "Product engineer, helped build Pause."
@@ -64,6 +64,9 @@ sections:
         description: Generate pronouncable random strings.
   - name: Hobbyist
     items:
+      - name: rdigest
+        link: https://github.com/chandru89new/rdigest
+        description: CLI to generate daily reading digests from RSS feeds.
       - name: Long-weekend finder
         link: https://lwc-druchan.vercel.app/
         description: Find long-weekend possibilities.
@@ -75,8 +78,7 @@ sections:
         description: Exploring Covid-era numbers country-wise.
       - name: Xpns
         link: https://github.com/chandru89new/xpns
-        description:
-          Personal expense tracking Android app, uses GSheets as backend.
+        description: Personal expense tracking Android app, uses GSheets as backend.
   - name: Writing
     items:
       - name: JS Cookbook
@@ -91,6 +93,9 @@ sections:
       - name: Codeblog
         description: Journal of programming.
         link: https://code.druchan.com
+      - name: More codeblog
+        description: Writing on Dev.to.
+        link: https://dev.to/druchan
   - name: Interwebs
     items:
       - name: Email
@@ -98,9 +103,6 @@ sections:
       - name: Github
         description: Most of my projects/code.
         link: https://github.com/chandru89new
-      - name: Dev notes
-        description: Dev notes on dev.to
-        link: https://dev.to/druchan
       - name: Photography
         link: https://pics.druchan.com
         description: Occasional shutter-bugism.
