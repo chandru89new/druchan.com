@@ -14,7 +14,7 @@ sections:
   - name: Worked with
     items:
       - name: TurbotHQ
-        description: (Current) Software architect.
+        description: Software architect.
         link: https://turbot.com
       - name: Obvious
         description: "Product engineer, helped build Pause."
