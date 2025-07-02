@@ -81,19 +81,16 @@ sections:
         description: Personal expense tracking Android app, uses GSheets as backend.
   - name: Writing
     items:
+      - name: Journal
+        description: Personal blog.
+        link: https://notes.druchan.com
       - name: JS Cookbook
         description: Simple recipes to make JS dev easier/safer.
         link: https://github.com/chandru89new/js-cookbook
       - name: Field Notes
         description: Collated notes as PM in bootstrapped startups.
         link: https://github.com/chandru89new/Field-Notes-on-Product-Management
-      - name: Journal
-        description: Personal blog.
-        link: https://notes.druchan.com
-      - name: Codeblog
-        description: Journal of programming.
-        link: https://code.druchan.com
-      - name: More codeblog
+      - name: Dev.to codeblog
         description: Writing on Dev.to.
         link: https://dev.to/druchan
   - name: Interwebs
