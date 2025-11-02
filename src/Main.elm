@@ -115,7 +115,7 @@ viewHeader =
     H.div []
         [ H.div [ Attr.class "" ] [ H.img [ Attr.src "/logo.png", Attr.class "text-center w-16 dark:invert" ] [] ]
         , H.h1 [ Attr.class "mt-6" ] [ H.text "Hi, I'm Chandru." ]
-        , H.p [ Attr.class "mt-2" ] [ H.text "I am a frontend dev and a few other things." ]
+        , H.p [ Attr.class "mt-2" ] [ H.text "I am a senior frontend architect/dev, a startup consultant and a few things." ]
         , H.hr [ Attr.class "mt-6" ] []
         ]
 

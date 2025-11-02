@@ -1,16 +1,4 @@
 sections:
-  - name: skills
-    items:
-      - name: Frontend Dev
-        description: React, Elm, Vue, TS, vanilla JS.
-      - name: Backend
-        description: Node, Express, API design, GraphQL, RDBMS.
-      - name: Product
-        description: Idea, wireframing, UI/UX, testing.
-      - name: Management
-        description: Team building, sprints, mentorship, documentation.
-      - name: Content
-        description: Research, outreach.
   - name: Worked with
     items:
       - name: TurbotHQ
@@ -41,6 +29,9 @@ sections:
         description: Bootstrapped startups newsletter researcher/writer.
   - name: Open source libs
     items:
+      - name: vāk
+        link: https://github.com/chandru89new/vaak
+        description: Static blog generator.
       - name: CLI Options Parser
         link: https://package.elm-lang.org/packages/chandru89new/elm-simple-cli-options-parser/latest/
         description: Simple CLI options parser package in Elm.
@@ -56,26 +47,23 @@ sections:
       - name: Advanced Switch Case
         link: https://github.com/chandru89new/switch-case
         description: Pattern-matching-like functionality in JS.
-      - name: Shzip
-        link: https://github.com/chandru89new/shzip
-        description: Simple way to generate dyanmic zip deliverables.
-      - name: Rndstring
-        link: https://github.com/chandru89new/rndstring
-        description: Generate pronouncable random strings.
   - name: Hobbyist
     items:
+      - name: txt2insta
+        link: https://txt2insta.vercel.app
+        description: Generate Instagram-compatible 1:1 images of text.
       - name: rdigest
         link: https://github.com/chandru89new/rdigest
         description: CLI to generate daily reading digests from RSS feeds.
+      - name: chequera
+        link: https://github.com/chandru89new/chequera
+        description: Simple Steampipe plugin docs query tester
       - name: Long-weekend finder
         link: https://lwc-druchan.vercel.app/
         description: Find long-weekend possibilities.
       - name: CGOL
         link: http://elm-conway.vercel.app/
         description: Implementing Conway's Game of Life in Elm.
-      - name: Covid19
-        link: https://covid19-90ee0.firebaseapp.com/
-        description: Exploring Covid-era numbers country-wise.
       - name: Xpns
         link: https://github.com/chandru89new/xpns
         description: Personal expense tracking Android app, uses GSheets as backend.
