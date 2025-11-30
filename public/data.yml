@@ -55,15 +55,15 @@ sections:
       - name: rdigest
         link: https://github.com/chandru89new/rdigest
         description: CLI to generate daily reading digests from RSS feeds.
-      - name: chequera
-        link: https://github.com/chandru89new/chequera
-        description: Simple Steampipe plugin docs query tester
       - name: Long-weekend finder
         link: https://lwc-druchan.vercel.app/
         description: Find long-weekend possibilities.
       - name: CGOL
         link: http://elm-conway.vercel.app/
         description: Implementing Conway's Game of Life in Elm.
+      - name: chequera
+        link: https://github.com/chandru89new/chequera
+        description: Simple Steampipe plugin docs query tester
       - name: Xpns
         link: https://github.com/chandru89new/xpns
         description: Personal expense tracking Android app, uses GSheets as backend.
@@ -78,6 +78,9 @@ sections:
       - name: Field Notes
         description: Collated notes as PM in bootstrapped startups.
         link: https://github.com/chandru89new/Field-Notes-on-Product-Management
+      - name: Escape from Algotraz
+        description: (in-progress) Brief guide/notes on healthy digital consumption
+        link: https://druchan.com/escape-from-algotraz
       - name: Dev.to codeblog
         description: Writing on Dev.to.
         link: https://dev.to/druchan

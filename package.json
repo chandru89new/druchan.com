@@ -6,6 +6,7 @@
   "author": "Chandru <chandru89new@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "elm": "^0.19.1-6",
     "http-server": "^14.1.1",
     "nodemon": "^2.0.22",
     "tailwindcss": "^3.3.2"
